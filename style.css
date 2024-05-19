@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #E91E63, #7956e5);
+    min-height: 100vh;
+}
+
+.notes-app {
+    width: 700px;
+    margin: 4%;
+}
+
+.notes-header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.notes-header img {
+    width: 80px;
+}
+
+.create-note {
+    background-color: #7956e5;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 15px 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.create-note img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1000px;
+}
+
+.note {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px 25px;
+    position: relative;
+    width: calc((100% - 20px)/3);
+}
+
+.note p {
+    outline: none;
+    font-size: 20px;
+    max-width: 265px;
+    min-height: 150px;
+}
+
+.note img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 25px;
+    cursor: pointer;
+}
